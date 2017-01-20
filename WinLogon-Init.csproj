@@ -33,6 +33,9 @@
   <PropertyGroup>
     <RootNamespace>WinLogon_Init</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nothing|x86'">
+    <OutputPath>bin\x86\Nothing\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -43,7 +46,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="init.ps1" />
+    <None Include="LICENSE" />
+    <None Include="LogonScript-Start\init.ps1" />
     <None Include="PowershellPlugins\ps-spotify\Private\Get-SpotifyCsrfKey.ps1" />
     <None Include="PowershellPlugins\ps-spotify\Private\Get-SpotifyOAuthKey.ps1" />
     <None Include="PowershellPlugins\ps-spotify\Private\Get-SpotifyWebHelperPort.ps1" />
@@ -53,9 +57,11 @@
     <None Include="PowershellPlugins\ps-spotify\Public\Get-SpotifyTrackStatus.ps1" />
     <None Include="PowershellPlugins\ps-spotify\Public\Set-SpotifyTrack.ps1" />
     <None Include="README.md" />
+    <None Include="Sample Files\login.bat" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Sample - ToOpen.xml" />
+    <Content Include=".gitignore" />
+    <Content Include="Sample Files\Sample - ToOpen.xml" />
     <Content Include="ToOpen.xml" />
   </ItemGroup>
   <ItemGroup>

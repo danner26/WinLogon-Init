@@ -137,6 +137,12 @@ DocProject/Help/html
 # Click-Once directory
 publish/
 
+# No builds for this.. ignoring bin
+bin/
+
+# obj not needed.. ignoring obj
+obj/
+
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
