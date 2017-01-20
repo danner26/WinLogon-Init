@@ -1,0 +1,1 @@
+start cmd.exe /k "cd %userprofile%\WinLogon\LogonScript-Start & powershell -File init.ps1"
