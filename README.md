@@ -6,6 +6,6 @@ This will be updated as I have time.. which I have a lot of at the moment.. so I
 
 ## Logon Script or Task Schedule
 As of now, this is the only way this script will run. I will be adding a module to simplify things for non-enterprise environments but right now this is it. If you would like to create the module before I do, let me know and feel free to create a fork.
-## Logon Script Route
+### Logon Script Route
 This is the preferable route in most enterprise environments that utilize client logon scripts. I highly prefer this as it allows me to control multiple logon actions, and ultimately start a defined set of applications.
-## Task Schedule Route
+### Task Schedule Route
