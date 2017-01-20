@@ -1,0 +1,51 @@
+<user>
+    <StartupSet>
+        <Name>Default Programs</Name>
+        <program name="Spotify">"C:\Users\annerd\AppData\Roaming\Spotify\Spotify.exe"</program>
+        <program name="Chrome">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"</program>
+        <program name="Outlook">"C:\Program Files\Microsoft Office\Office16\OUTLOOK.exe"</program>
+    </StartupSet>
+    <StartupSet>
+        <Name>Partial Development</Name>
+        <program name="Spotify">"C:\Users\annerd\AppData\Roaming\Spotify\Spotify.exe"</program>
+        <program name="Chrome">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"</program>
+        <program name="Outlook">"C:\Program Files\Microsoft Office\Office16\OUTLOOK.exe"</program>
+        <program name="Command Prompt">C:\Windows\system32\cmd.exe</program>
+        <program name="Atom">C:\Users\annerd\AppData\Local\atom\Update.exe --processStart "atom.exe"</program>
+    </StartupSet>
+    <StartupSet>
+        <Name>Full Development</Name>
+        <program name="Spotify">"C:\Users\annerd\AppData\Roaming\Spotify\Spotify.exe"</program>
+        <program name="Chrome">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"</program>
+        <program name="Outlook">"C:\Program Files\Microsoft Office\Office16\OUTLOOK.exe"</program>
+        <program name="Command Prompt">C:\Windows\system32\cmd.exe</program>
+        <program name="Atom">C:\Users\annerd\AppData\Local\atom\Update.exe --processStart "atom.exe"</program>
+        <program name="Visual Studio">"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe"</program>
+        <program name="Powershell ISE">C:\Windows\system32\WindowsPowerShell\v1.0\powershell_ise.exe</program>
+    </StartupSet>
+    <StartupSet>
+        <Name>SysAdmin Programs</Name>
+        <program name="Spotify">"C:\Users\annerd\AppData\Roaming\Spotify\Spotify.exe"</program>
+        <program name="Chrome">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"</program>
+        <program name="Outlook">"C:\Program Files\Microsoft Office\Office16\OUTLOOK.exe"</program>
+        <program name="Command Prompt">C:\Windows\system32\cmd.exe</program>
+        <program name="Atom">C:\Users\annerd\AppData\Local\atom\Update.exe --processStart "atom.exe"</program>
+        <program name="vSphere Client">"C:\Program Files (x86)\VMware\Infrastructure\Virtual Infrastructure Client\Launcher\VpxClient.exe"</program>
+        <program name="WinSCP">"C:\Program Files (x86)\WinSCP\WinSCP.exe"</program>
+        <program name="Putty">"C:\Program Files (x86)\PuTTY\putty.exe"</program>
+    </StartupSet>
+    <StartupSet>
+        <Name>All Main Programs</Name>
+        <program name="Spotify">"C:\Users\annerd\AppData\Roaming\Spotify\Spotify.exe"</program>
+        <program name="Chrome">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"</program>
+        <program name="Outlook">"C:\Program Files\Microsoft Office\Office16\OUTLOOK.exe"</program>
+        <program name="Command Prompt">C:\Windows\system32\cmd.exe</program>
+        <program name="Atom">C:\Users\annerd\AppData\Local\atom\Update.exe --processStart "atom.exe"</program>
+        <program name="Visual Studio">"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe"</program>
+        <program name="Powershell ISE">C:\Windows\system32\WindowsPowerShell\v1.0\powershell_ise.exe</program>
+        <program name="vSphere Client">"C:\Program Files (x86)\VMware\Infrastructure\Virtual Infrastructure Client\Launcher\VpxClient.exe"</program>
+        <program name="WinSCP">"C:\Program Files (x86)\WinSCP\WinSCP.exe"</program>
+        <program name="Putty">"C:\Program Files (x86)\PuTTY\putty.exe"</program>
+        <program name="FileZilla">"C:\Program Files\FileZilla FTP Client\filezilla.exe"</program>
+    </StartupSet>
+</user>

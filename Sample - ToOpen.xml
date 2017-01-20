@@ -1,0 +1,25 @@
+<user>
+    <StartupSet>
+        <Name>Default Programs</Name>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+    </StartupSet>
+    <StartupSet>
+        <Name>CUSTOM PROGRAMS SET</Name>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+    </StartupSet>
+    <StartupSet>
+        <Name>All Programs</Name>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+        <program name="Program Name">PROGRAM PATH</program>
+    </StartupSet>
+</user>
