@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+    <ProjectGuid>{ECE5E55A-DFFE-4192-B3BD-2C0388DCCA85}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
     <AssemblyName>ConsoleApplication</AssemblyName>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>WinLogon_Init</RootNamespace>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -38,6 +41,25 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="init.ps1" />
+    <None Include="PowershellPlugins\ps-spotify\Private\Get-SpotifyCsrfKey.ps1" />
+    <None Include="PowershellPlugins\ps-spotify\Private\Get-SpotifyOAuthKey.ps1" />
+    <None Include="PowershellPlugins\ps-spotify\Private\Get-SpotifyWebHelperPort.ps1" />
+    <None Include="PowershellPlugins\ps-spotify\ps-spotify.psd1" />
+    <None Include="PowershellPlugins\ps-spotify\ps-spotify.psm1" />
+    <None Include="PowershellPlugins\ps-spotify\Public\Find-SpotifyItem.ps1" />
+    <None Include="PowershellPlugins\ps-spotify\Public\Get-SpotifyTrackStatus.ps1" />
+    <None Include="PowershellPlugins\ps-spotify\Public\Set-SpotifyTrack.ps1" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sample - ToOpen.xml" />
+    <Content Include="ToOpen.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
