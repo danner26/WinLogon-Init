@@ -48,4 +48,8 @@
         <program name="Putty">"C:\Program Files (x86)\PuTTY\putty.exe"</program>
         <program name="FileZilla">"C:\Program Files\FileZilla FTP Client\filezilla.exe"</program>
     </StartupSet>
+	<StartupSet>
+        <Name>Atom Test</Name>
+        <program name="Atom">C:\Users\annerd\AppData\Local\atom\Update.exe --processStart "atom.exe"</program>
+    </StartupSet>
 </user>

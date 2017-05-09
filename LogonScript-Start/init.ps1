@@ -54,6 +54,10 @@ function startPrograms {
                     Write-Host "Starting" $program.GetAttribute("name")
                     start chrome.exe --restore-last-session
                 }
+                "Atom" {
+                    Write-Host "Starting" $program.GetAttribute("name")
+                    & $env:USERPROFILE\AppData\Local\atom\Update.exe --processStart 'atom.exe'
+                }
                 default { 
                     Write-Host "Starting" $program.GetAttribute("name")
                     start $temp
