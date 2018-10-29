@@ -18,7 +18,6 @@
 .EXAMPLE
     PS C:\> Find-SpotifyItem -SearchQuery "Mudvayne" -SearchType Artist
 
-
     external_urls : @{spotify=https://open.spotify.com/artist/2Pfv2w8a20xzC7Dr7QXRqM}
     followers     : @{href=; total=160592}
     genres        : {alternative metal, groove metal, industrial metal, melodic metalcore...}
@@ -59,7 +58,6 @@
 .EXAMPLE
     PS C:\> Find-SpotifyItem -SearchQuery "nothing to gein" -SearchType Track
 
-
     album             : @{album_type=album; available_markets=System.Object[]; external_urls=; href=https://api.spotify.com/v1/albums/79cxLehm2WE9NMIRcJaqK9;
                         id=79cxLehm2WE9NMIRcJaqK9; images=System.Object[]; name=L.D. 50; type=album; uri=spotify:album:79cxLehm2WE9NMIRcJaqK9}
     artists           : {@{external_urls=; href=https://api.spotify.com/v1/artists/2Pfv2w8a20xzC7Dr7QXRqM; id=2Pfv2w8a20xzC7Dr7QXRqM; name=Mudvayne;
@@ -87,7 +85,6 @@
 #>
 
 Function Find-SpotifyItem {
-    
     [CmdletBinding()]
     [OutputType(
         [PSCustomObject]
@@ -98,8 +95,8 @@ Function Find-SpotifyItem {
             Mandatory = $true
         )]
         [String]
-        $SearchQuery, 
-        
+        $SearchQuery,
+
         [Parameter(
             Mandatory = $true
         )]
@@ -110,12 +107,12 @@ Function Find-SpotifyItem {
             "Album"
         )]
         [String]
-        $SearchType, 
-        
+        $SearchType,
+
         [Parameter()]
         [Int]
-        $Limit = 50, 
-        
+        $Limit = 50,
+
         [Parameter()]
         [Int]
         $Offset = 0

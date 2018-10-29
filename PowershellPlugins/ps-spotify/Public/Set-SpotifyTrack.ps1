@@ -27,7 +27,6 @@
 #>
 
 Function Set-SpotifyTrack {
-    
     [CmdletBinding(
         DefaultParameterSetName = "__AllParameterSets"
     )]
@@ -42,8 +41,8 @@ Function Set-SpotifyTrack {
             ValueFromPipelineByPropertyName = $true
         )]
         [String]
-        $SpotifyUri, 
-        
+        $SpotifyUri,
+
         [Parameter(
             ParameterSetName = "Pause"
         )]
@@ -88,7 +87,7 @@ Function Set-SpotifyTrack {
     }
 
     try {
-        Invoke-RestMethod @params | 
+        Invoke-RestMethod @params |
             Out-Null
     } catch {
         $_

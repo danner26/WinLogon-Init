@@ -19,7 +19,6 @@
 #>
 
 Function Get-SpotifyOauthKey {
-
     [CmdletBinding()]
     [OutputType(
         [String]

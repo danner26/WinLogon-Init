@@ -7,7 +7,7 @@
         $printNum++
     }
     Write-Host "$printNum)  Print programs in each set"
-    $selection = Read-Host -Prompt "Selection " 
+    $selection = Read-Host -Prompt "Selection "
     if ( $selection -gt $printNum ) {
         cls
         Write-Host "Please try again"
@@ -45,12 +45,12 @@ function startPrograms {
         if ( $j -ne 0 ) {
             $temp = $program.'#text'
             switch ( $program.GetAttribute("name") ) {
-                "Spotify" { 
+                "Spotify" {
                     Write-Host "Starting" $program.GetAttribute("name")
                     start $temp
                     startSpotify
                 }
-                "Chrome" { 
+                "Chrome" {
                     Write-Host "Starting" $program.GetAttribute("name")
                     start chrome.exe --restore-last-session
                 }
@@ -58,7 +58,7 @@ function startPrograms {
                     Write-Host "Starting" $program.GetAttribute("name")
                     & $env:USERPROFILE\AppData\Local\atom\Update.exe --processStart 'atom.exe'
                 }
-                default { 
+                default {
                     Write-Host "Starting" $program.GetAttribute("name")
                     start $temp
                 }
@@ -82,4 +82,3 @@ Import-Module $env:USERPROFILE\WinLogon\PowershellPlugins\ps-spotify\ps-spotify.
 [xml]$UserStartups = Get-Content -Path ToOpen.xml
 cls
 init
-

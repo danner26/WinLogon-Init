@@ -12,7 +12,6 @@
 .EXAMPLE
     PS C:\> Get-SpotitfyTrackStatus
 
-    
     version          : 9
     client_version   : 1.0.38.171.g5e1cd7b2
     playing          : True
@@ -31,7 +30,6 @@
     running          : True
 .EXAMPLE
     PS C:\> Get-SpotifyTrackStatus -Port 4371
-
 
     version          : 9
     client_version   : 1.0.38.171.g5e1cd7b2
@@ -58,12 +56,11 @@
 #>
 
 Function Get-SpotifyTrackStatus {
-
     [CmdletBinding()]
     [OutputType(
         [PSCustomObject]
     )]
-    
+
     Param (
         [Parameter()]
         [ValidateRange(
@@ -71,14 +68,14 @@ Function Get-SpotifyTrackStatus {
         )]
         [Int]
         $Port = (Get-SpotifyWebHelperPort)
-        
+
     )
 
     $params = @{
         Method = "Get"
         Uri = "https://www.spotilocal.com:{0}/remote/status.json?oauth={1}&csrf={2}" -f $Port, (Get-SpotifyOAuthKey), (Get-SpotifyCsrfKey -Port $Port)
         Headers = @{
-            Origin = "https://open.spotify.com" 
+            Origin = "https://open.spotify.com"
         }
         ErrorAction = "Stop"
     }

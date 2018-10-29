@@ -16,7 +16,7 @@
     PS C:\> Get-SPotifyCsrfKey -Port (Get-SpotifyWebHelperPort)
     0e00268419ba53396c2f559759c95dbd
 .NOTES
-    The Port Parameter is Mandatory on this function as it is a private function and will always be passed via the other ps-spotify Cmdlets. 
+    The Port Parameter is Mandatory on this function as it is a private function and will always be passed via the other ps-spotify Cmdlets.
 .LINK
     https://bartsimons.me
 .LINK
@@ -24,7 +24,6 @@
 #>
 
 Function Get-SpotifyCsrfKey {
-    
     [CmdletBinding()]
     [OutputType(
         [String]

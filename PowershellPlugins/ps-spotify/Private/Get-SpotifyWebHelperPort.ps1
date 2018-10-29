@@ -19,7 +19,6 @@
 #>
 
 Function Get-SpotifyWebHelperPort {
-
     [CmdletBinding()]
     [OutputType(
         [Int]
